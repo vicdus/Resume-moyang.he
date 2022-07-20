@@ -25,11 +25,11 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
-
-\geometry{left=2cm, top=1.5cm, right=2cm, bottom=1.5cm, footskip=.5cm} % Configure page margins with geometry
+\usepackage[super]{nth}
+\geometry{left=1.5cm, top=1.0cm, right=1.5cm, bottom=1.5cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
-\linespread{1.06}
+\linespread{1.0}
 % Color for highlights
 \colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 %\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
@@ -47,20 +47,15 @@
 %	Comment any of the lines below if they are not required
 %----------------------------------------------------------------------------------------
 
-\name{Moyang}{He}
-\mobile{206-390-0024}
-\email{iammoyang@gmail.com}
-\github{vicdus}
-\linkedin{hemoyang}
-%\skype{skypeid}
-%\stackoverflow{SOid}{SOname}
-%\twitter{@twit}
-%\linkedin{linkedin name}
-%\reddit{reddit account}
-\extrainfo{Seattle, WA}
+\name{Haohan}{Zhao}
+\mobile{513-319-5688}
+\email{haohan.zhaozhao@gmail.com}
+\linkedin{haohanzhao}
+\home{Seattle, WA}
+\extrainfo{No visa sponsorship needed}
 %\extrainfo{test} % Other text you want to include on this line
 
-\position{Software Engineer{\enskip\cdotp\enskip}Backend{\enskip\cdotp\enskip}Full Stack} % Your expertise/fields
+\position{Data Engineer{\enskip\cdotp\enskip}Data Scientist} % Your expertise/fields
 
 
 \makecvfooter{}{Moyang HE~~~·~~~Résumé}{} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
@@ -79,16 +74,7 @@
 
 
 \input{cv-sections/experience.tex}
-\input{cv-sections/opensource}
-\input{cv-sections/skills.tex}
-% \input{cv-sections/education.tex}
-%\newpage % Force a new page for looks
-
-%\input{cv-sections/extracurricular.tex}
-
-%\input{cv-sections/honors.tex}
-%\input{cv-sections/presentation.tex}
-%\input{cv-sections/writing.tex}
+\input{cv-sections/projects.tex}
 \input{cv-sections/degrees.tex}
 
 %----------------------------------------------------------------------------------------

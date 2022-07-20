@@ -309,9 +309,9 @@
 % Usage: \skype{<skype account>}
 \newcommand*{\skype}[1]{\def\@skype{#1}}
 
-% Defines writer's reddit (optional)
-% Usage: \reddit{<reddit account>}
-\newcommand*{\reddit}[1]{\def\@reddit{#1}}
+% Defines writer's home (optional)
+% Usage: \home{<home account>}
+\newcommand*{\home}[1]{\def\@home{#1}}
 
 % Defines writer's xing (optional)
 % Usage: \xing{<xing name>}
@@ -489,11 +489,11 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \faSkype\acvHeaderIconSep\@skype%
         }%
-      \ifthenelse{\isundefined{\@reddit}}%
+      \ifthenelse{\isundefined{\@home}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.reddit.com/user/\@reddit}{\faReddit\acvHeaderIconSep\@reddit}%
+          \faHome\acvHeaderIconSep\@home%
         }%
       \ifthenelse{\isundefined{\@xing}}%
         {}%
